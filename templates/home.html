@@ -1,0 +1,28 @@
+
+<html>
+    <head>
+        <title>Home - Pillow</title>
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='style.css') }}">
+    </head>
+    <body>
+        <header>
+            <nav>  
+                <ul>
+                    <li class="logo"><a href="/"><img src="{{ url_for('static',filename='pillow.png') }}" alt="Logo" height="30px"></a></li>
+                    <li><a href="/about"> About </a></li>  
+                    <li><a href="/contact"> Contact </a></li>
+                </ul>  
+            </nav>  
+        </header>
+        <div class="content">
+            <img src="{{ url_for('static',filename='pillow.png') }}" alt="Logo" height="100px"><br>
+            <h1>Pillow: A Sleeper Tool</h1> 
+            <form action="/leagues" id="login"> 
+                <label for="username">Username: </label>
+                <input type="text" id="username" name="username"></input>
+                <br><br>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,26 @@
+
+<html>
+    <head>
+        <title>Contact - Pillow</title>
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='style.css') }}">
+    </head>
+    <body>
+        <header>
+            <nav>  
+                <ul>
+                    <li class="logo"><a href="/"><img src="{{ url_for('static',filename='pillow.png') }}" alt="Logo" height="30px"></a></li>
+                    <li><a href="/about"> About </a></li>  
+                    <li><a href="/contact"> Contact </a></li>
+                </ul>  
+            </nav>  
+        </header>
+        <div class="content">
+            <img src="{{ url_for('static',filename='pillow.png') }}" alt="Logo" height="100px"><br>
+            <h1>Pillow: A Sleeper Tool</h1> 
+            <p>
+                Ike Ingle: <a href="mailto: giingle@ncsu.edu" style="color:#fff;">giingle@ncsu.edu</a><br>
+                Taylor Agarwal: <a href="mailto: tagarwa@ncsu.edu" style="color:#fff;">tagarwa@ncsu.edu</a>
+            </p>
+        </div>
+    </body>
+</html>
